@@ -1,0 +1,39 @@
+/* src/components/SearchBar.css */
+.search-bar {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-bar .suggestions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+  }
+  
+  .search-bar .suggestions li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .search-bar .suggestions li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
